@@ -22,7 +22,7 @@
     line-height: 30px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    color: #000;
+    color: var(--secondary-color);
     background-color: var(--card-bg);
 }
 .card img {

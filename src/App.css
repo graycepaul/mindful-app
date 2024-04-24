@@ -29,7 +29,7 @@
 
 }
 :root .dark {
-  --primary-color: #1c1c1c; /* Dark grey for primary elements */
+  --primary-color: #100E2A; /* Dark grey for primary elements */
   --secondary-color: #d9d9d9; /* Light grey for secondary elements */
   --secondary-color-fade: #d9d9d986; /* Semi-transparent light grey */
   --overlay: #333333; /* Dark overlay */
@@ -47,7 +47,7 @@
   --outline: #D0D5DD; /* Outline color */
   --mission-blue: #1F1B50; /* Dark blue */
   --footer-blue: #100E2A; /* Dark blue for footer */
-  --card-bg: #2c2c2c; /* Dark grey for card backgrounds */
+  --card-bg: #100E2A; /* Dark grey for card backgrounds */
 }
 
 .react-switch {
