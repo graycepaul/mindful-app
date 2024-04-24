@@ -1,0 +1,130 @@
+/* Common styles for header elements */
+.navigation, .navList, .userAuth, .navbar, .logoAndMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  width: 98%;
+  padding: 30px 30px 80px 30px;
+  color: var(--btn);
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+.navigation {
+  width: 75vw;
+}
+.navList {
+  list-style: none;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.navList li {
+  width: max-content;
+}
+
+.navList a, .userAuth a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.menuIcon {
+  display: none;
+}
+
+.actionBtn {
+  background-color: var(--btn);
+  padding: 10px 30px;
+  color: var(--primary-color);
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.userAuth .login, .toggleBtn {
+  background-color: var(--primary-color);
+  color: var(--grey);
+  margin-left: 30px;
+}
+
+.actionBtn:hover {
+  background-color: var(--highlight);
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 840px) {
+  .header {
+    width: 95vw;
+    padding: 30px;
+  }
+
+  .navigation, .navList, .userAuth, .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userAuth .actionBtn {
+    width: 90px;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: var(--primary-color);
+  }
+
+  .navList {
+    margin: 0;
+    gap: 10px;
+  }
+  .menuIcon {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .userAuth, .navList {
+    width: max-content;
+    line-height: 30px;
+    width: 100vw;
+  }
+
+  .navigation .userAuth a {
+    width: 150px;
+    color: #000;
+  }
+
+  /* Dropdown styles */
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 12%;
+    left: 0%; 
+    background-color: var(--mission-blue);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    width: 98vw;
+    justify-content: center;
+    box-shadow: 0 2px 5px var(--blue-overlay);
+  }
+
+  .menuWrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navList li a {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+
+  .menuWrapper:hover .navigation {
+    display: block;
+  }
+}

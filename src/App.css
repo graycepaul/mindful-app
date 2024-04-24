@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+  max-width: 99vw;
+}
+:root .light{
+  --primary-color: #fff; 
+  --secondary-color: #000;
+  --secondary-color-fade: #000000d6;
+  --overlay: #a9a7a759;
+  --grey: #80808096;
+  --grey-tips-text: #808080;
+  --highlight: #EF865A;
+  --hero-highlight: #FAD1B2;
+  --red: #ff0000;
+  --easy-peasy: #F591AF; 
+  --green: #83AF31;
+  --hero-green: #DDEDBF;
+  --blue-fade: #768af93e;
+  --blue-overlay: #100ab512;
+  --btn: #4C51C1;
+  --outline: #D0D5DD;
+  --mission-blue: #1F1B50;
+  --footer-blue: #100E2A;
+  --card-bg: #fff;
+
+}
+:root .dark {
+  --primary-color: #1c1c1c; /* Dark grey for primary elements */
+  --secondary-color: #d9d9d9; /* Light grey for secondary elements */
+  --secondary-color-fade: #d9d9d986; /* Semi-transparent light grey */
+  --overlay: #333333; /* Dark overlay */
+  --grey: #80808096; /* Grey with transparency */
+  --grey-tips-text: #808080; /* Grey for text */
+  --highlight: #EF865A; /* Highlight color */
+  --hero-highlight: #FAD1B2; /* Highlight color for hero elements */
+  --red: #ff0000; /* Red */
+  --easy-peasy: #F591AF; /* Pink */
+  --green: #83AF31; /* Green */
+  --hero-green: #DDEDBF; /* Light green for hero elements */
+  --blue-fade: #768af93e; /* Semi-transparent blue */
+  --blue-overlay: #100ab512; /* Blue overlay */
+  --btn: #4C51C1; /* Button color */
+  --outline: #D0D5DD; /* Outline color */
+  --mission-blue: #1F1B50; /* Dark blue */
+  --footer-blue: #100E2A; /* Dark blue for footer */
+  --card-bg: #2c2c2c; /* Dark grey for card backgrounds */
+}
+
+.react-switch {
+ margin: 0 10px;
+}

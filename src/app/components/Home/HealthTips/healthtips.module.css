@@ -1,0 +1,97 @@
+.content, .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.healthTips {
+    padding: 70px;
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+.healthTips h1, .healthTips h3 {
+    color: var(--secondary-color);
+
+}
+.healthTips  a {
+    text-decoration: none;
+    font-weight: 500;    
+    color: var(--btn);
+}
+.content {
+    border: 1px solid var(--grey);
+    margin: 20px auto;
+    width: 90vw;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+.content .article {
+    width: 40vw;
+    margin: 10px auto;
+}
+.gradient {
+    width: 42vw;
+    height: 100%;
+}
+.content1{
+    margin: 10px auto;
+}
+.heading {
+    color: var(--green);
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.article h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: var(--secondary-color);
+}
+.profile {
+    width: 220px;
+    font-size: 14px;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+}
+.profile div {
+    line-height: 20px;
+    margin: 20px 0;
+}
+.timeStamp, .article p, .article h4{
+    color: var(--grey-tips-text);
+}
+.content h4 {
+    font-weight: 400;
+    margin: 15px 0 5px 0;
+    width: 98%;
+    
+}
+
+
+@media screen and (max-width: 769px) { 
+
+    .healthTips {
+        padding: 10px;
+        width: 370px;
+    }
+    .content .article {
+        width: 300px;
+    }
+    .heading {
+        color: var(--green);
+        font-size: 14px;
+    }
+    .gradient img {
+        width: 280px;
+    }
+    
+}

@@ -1,0 +1,114 @@
+.featuresCards, .offers, .resourcesDec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features {
+    height: fit-content;
+    padding: 70px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.featuresCards {
+    height: fit;
+    flex-wrap: wrap;
+}
+.card {
+    width: 380px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 30px 20px;
+    line-height: 30px;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    color: #000;
+    background-color: var(--card-bg);
+}
+.card img {
+    width: 200px;
+    height: 120px;
+}
+.card h4 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+
+/* offers */
+.offers {
+    padding: 50px;
+    line-height: 50px;
+    text-align: start;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--blue-fade);
+}
+.offersList, .offersImg {
+    width: 606px;
+}
+.offersList li  {
+    list-style: none;
+}
+.offersList button {
+    border: none;
+    width: 100%;
+    font-weight: 500;
+    text-align: start;
+    padding: 5px 24px;
+    letter-spacing: 0.7px;
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    background-color: var(--blue-fade);
+}
+
+.offersList button:hover {
+    background-color: var(--btn);
+    color: var(--primary-color);
+}
+.offersImg {
+    padding: 20px 30px;
+    height: 420px;
+    line-height: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: var( --secondary-color-fade);
+    overflow: hidden;
+    background-color: var(--blue-overlay);
+}
+.offersImg img {
+    width: 550px;
+    height: 304px;
+    margin: 0 auto 10px auto;
+}
+
+
+  /* MOBILE PHONES */
+  @media only screen and (max-width: 450px) {
+
+    .featuresCards {
+        width: 320px;
+        margin: 0 0 0 -20px;
+    }
+    .card {
+        margin: 30px auto 0 auto;
+    }
+    .offers {
+        width: 370px;
+        margin-left: -50px;
+    }
+    .offersList p {
+        line-height: 25px;
+        margin: 7px 0;
+    }
+    .offersList, .offersImg {
+        width: 350px;
+    }
+     .offersImg {
+       margin-left: -60px;
+    }
+  }

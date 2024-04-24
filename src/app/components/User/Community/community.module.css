@@ -1,0 +1,387 @@
+/* ----------------------------------------- */
+/* Flex container for various sections */
+.flexContainer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+/* Header Navigation */
+/* ----------------------------------------- */
+.navigation {
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.navList {
+    width: 380px;
+    margin-right: 500px;
+}
+.navList li {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.navList .activeLink {
+    border-bottom: 3px solid orangered;
+  }
+.navList a, .icons a {
+    text-decoration: none;
+    color: #53666E;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.navList a:hover {
+    border-bottom: 3px solid rgb(0, 30, 255);
+}
+.icons {
+    width: 300px;
+    margin-right: 100px;
+    color: #53666E;
+    gap: 10px;
+}
+.icons input {
+    width: 60%;
+}
+.icons a {
+    margin-top: 15px;
+}
+
+/* Main Content */
+/* joined Communities*/
+/* ----------------------------------------- */
+.communities input, 
+.navigation input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #53666e15;
+}
+.communities {
+    padding: 20px 50px;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.myCommunity {
+    width: 270px;
+    height: fit-content;
+    padding: 0 20px;
+    margin: 20px 0 50px 0;  
+}
+.communityTopics  p{
+    width: 150px;
+    margin-right: 50px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.active {
+    margin-top: -30px;
+    color: #5159f4;
+}
+.myCommunity h2, .myCommunity h3 {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.myCommunity button {
+    width: 100%;
+    font-size: 24px;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    background-color: #4C51C1;
+}
+
+
+/* Modal Styles */
+/* ----------------------------------------- */
+.modal {
+    background-color: #fff;
+    width: 600px;
+    height: 500px;
+    line-height: 40px;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 250px 700px  #0F1D2499;
+}
+  
+.modalTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+  .modal hr {
+    border: 0.5px solid rgba(128, 128, 128, 0.149);
+    margin: 20px 0;
+    outline: none;
+    width: 90%;
+}
+  .modalButton {
+    margin-left: 500px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #fff;
+}
+  .modalButton:hover {
+    color: red;
+}
+.modal select {
+   color: rgb(255, 132, 0);
+   border: none;
+}
+.modal textarea {
+    width: 90%;
+    color: #000;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.415);
+}
+  .modal form button {
+    background-color: #4C51C1;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    margin-left: 340px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* List of posts the user has made*/
+.UserFeeds {
+    width: 650px;
+    height: 850px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.18);
+}
+
+/* Feeds Posts */
+.userPosts {
+    border: 1px solid #8080803e;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+/* feeds Profile */
+.userProfile {
+    padding: 20px;
+    margin: 10px 0;
+    line-height: 30px;
+    border-bottom: 1px solid #8080803e;
+}
+.coverPhoto {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.postsHistory {
+    overflow: scroll;
+    height: 390px;
+}
+.postsHistory::-webkit-scrollbar {
+    display: none;
+}
+.postsHistory > div, 
+.newPost {
+    padding: 15px;
+    border-bottom: 1px solid #8080803e;  
+}
+.postTitle {
+    width: 480px;
+    margin-left: 20px;
+}
+.postTitle h4 {
+    width: max-content;
+    color: var(--btn);
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    margin: 10px 480px 0 0;
+}
+.postContent, 
+.PostAnalytics {
+    padding: 0 50px;
+    color: #454545;
+    line-height: 25px;
+}
+#userIcon {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+.userPosts input {
+    border: 1px solid #8080803e;
+}
+.postHeader {
+    width: 400px;
+    margin: 20px 0;
+    justify-content: space-around;
+}
+.PostAnalytics {
+    width: 470px;
+    margin: 10px 0;
+}
+.PostAnalytics button {
+    padding: 10px 15px;
+    background-color: var(--mission-blue);
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+}
+
+/* List of communities available to the user */
+.forYou {
+    width: 450px;
+    height: 1370px;
+    border: 1px solid #8080803e;
+    border-radius: 10px;
+    max-height: 850px;
+    margin: 0px auto;
+}
+.feeds {
+    overflow: scroll;
+    height: 750px;
+}
+.feeds::-webkit-scrollbar {
+    display: none; /* This line hides the scrollbar */
+}
+
+.forYou button, 
+.UserFeeds button {
+    padding: 5px 20px;
+    margin-right: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.forYou p {
+    color: #848487;
+}
+.forYouHeader {
+    margin: 20px;
+}
+.forYouHeader h4 {
+    color: var(--btn);
+}
+.forYou a, 
+.forYou button {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    font-size: 14px;
+}
+.followers {
+    margin-left: 40px;
+}
+.followersCount {
+    margin-left: -150px;
+}
+.forYouPost:nth-child(1) {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid var(--grey);
+}
+.forYouPost div:nth-child(2) {
+    margin-left: 20px;
+    line-height: 25px;
+}
+.forYouPost span, 
+.forYouPost a {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 840px){
+    .UserFeeds, .forYou {
+        margin: -40px;
+        height: fit-content;
+    }
+    .UserFeeds {
+        margin-bottom: 100px;
+    }
+    .userPosts {
+        border: 1px solid var(--grey);
+        border-radius: 7px;
+        margin: 20px 0;
+    }
+    .postsHistory, .feeds {
+        overflow: visible;
+        height: fit-content;
+    }
+    .postsHistory > div {
+        margin-left: -40px;
+    }
+    .postTitle{ 
+        width: 100px;
+        margin-left: -70px;
+    }
+    .forYouPost .followers{
+        margin-right: 50px;
+    } 
+    /* .navigation {
+        width: 90vw;
+        margin: 20px;
+    } */
+    .navigation {
+        text-align: center;
+        border-radius: 0;
+        padding: 20px;
+        margin: -50px 0 0 0;
+        align-items: center;
+        position: fixed;
+        background-color: var(--primary-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.497);
+      }
+    .hidden {
+        display: block;
+    }
+    .header {
+        width: 99vw;
+        padding: 30px 0;
+      }
+    .navList {
+        display: none;
+      position: absolute;
+      flex-direction: column;
+      left: 0%;
+      margin: 0;
+      width: 99vw;
+      background-color: #020547;
+    }
+    .navList li {
+        padding: 10px 0;
+    }
+    .navList li:nth-child(2) {
+        border-bottom: 3px solid orangered;
+    }
+    .navList a:hover {
+        border-bottom: 3px solid orangered;
+    }
+    .icons {
+      display: none;
+    }
+    .menuIcon {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+    }
+    .navList li a {
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+    .mobile:hover .navList {
+        display: block;
+      }
+}

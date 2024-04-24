@@ -1,0 +1,142 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    background-color: var(--secondary-color-fade);
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+}
+.fullName, .cache, .countryCode, .resetCode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.signIn {
+    margin-top: 70px;
+}
+.form label {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;    
+}
+.signIn .formCard {
+    width: 380px;
+    line-height: 30px;
+}
+
+.formCard {
+    width: 700px;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    text-align: start;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+.formCard input, .formCard select{
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border-radius: 6px;
+    outline: none;
+    background-color: var(--primary-color);
+    border: 1px solid var(--outline);
+}
+.formCard input:hover {
+    border: 1px solid var(--highlight);
+}
+.fullName div{
+    width: 49%;
+}
+ .code {
+    width: 15%
+}
+.number  {
+    width: 83%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.resetCode input {
+    margin: 10px;
+    padding: 20px;
+}
+.cache input{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+}
+.cache label{
+    width: 100%;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.form a {
+    color: var(--highlight);
+}
+.authRoute {
+    margin: -10px auto;
+    padding: 10px 20px;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: var(--overlay);
+}
+.resetBtn {
+    color: var(--red);
+    width: 200px;
+    border: none;
+    background-color: var(--primary-color);
+}
+.verificationCode {
+    margin: 20px 0;
+    color: green;
+}
+
+@media only screen and (max-width: 450px) {
+    .signIn .formCard,
+    .passwordReset .formCard {
+        width: 350px;
+        margin: 30px 0 30px -13px;
+    }
+    .signUp .formCard {
+        width: 350px;
+        margin: 10px 0 20px -12px;
+    }
+    .formCard {
+        width: 360px;
+        margin: 15px auto;
+        height: fit-content;
+
+   }
+    .resetCode input{
+        width: 80%;
+        margin: 10px;
+        padding: 12px;
+    }
+    .resetBtn {
+        width: 80%;
+    }
+    .verificationCode {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    .code input{
+        width: 90px;
+    }
+    .number input{
+        width: 210px;
+        margin-left: 45px;
+    }
+    
+}
