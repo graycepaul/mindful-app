@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import style from "./auth.module.css";
-import { FaHeartbeat } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./context/fireBase";
 import { Button } from "../Buttons/Buttons";
+import { Logo } from "../Home/Header/Header";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export function SignUp() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
-  const [gender, setGender] = useState("male"); // Default gender to male
+  const [gender, setGender] = useState("male");
   const [code, setCode] = useState("");
   const [number, setNumber] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -37,16 +39,18 @@ export function SignUp() {
       console.error(errorCode, errorMessage);
       toast.error(errorMessage);
     }
+    setPassword("");
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
   return (
     <div className={style.body}>
       <ToastContainer />
       <div className={`${style.form} ${style.signUp}`}>
-        <h2>
-          Mindful
-          <FaHeartbeat />
-        </h2>
+        <Logo />
         <div className={style.formCard}>
           <form onSubmit={onSubmit}>
             <div className={style.fullName}>
@@ -125,11 +129,11 @@ export function SignUp() {
                 />
               </div>
             </div>
-            <div>
+            <div className={style.password}>
               <label htmlFor="password">Password:</label>
               <br />
               <input
-                type="password"
+                type={showPassword ? "password" : "text"}
                 id="password"
                 name="password"
                 placeholder="Password"
@@ -137,6 +141,9 @@ export function SignUp() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
+              <button type="button" onClick={toggleShowPassword}>
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
             </div>
             <div className={style.cache}>
               <input type="checkbox" id="terms" name="terms" />

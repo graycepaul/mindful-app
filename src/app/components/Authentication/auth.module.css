@@ -1,37 +1,40 @@
+/* Body */
 .body {
     width: 100vw;
     height: 100vh;
     padding: 30px;
-    background-color: var(--secondary-color-fade);
+    background-color: var(--form-bg);
     color: var(--primary-color);
     font-family: "Inter", sans-serif;
 }
-.fullName, .cache, .countryCode, .resetCode {
+
+/* Flex containers */
+.fullName, 
+.cache, 
+.countryCode {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/* General styling for forms */
 .form {
     width: fit-content;
     height: fit-content;
     margin: 0 auto;
     text-align: center;
 }
-.signIn {
-    margin-top: 70px;
+.form h2 {
+    color: var(--form-logo);
 }
 .form label {
     font-family: Inter;
     font-size: 14px;
-    font-weight: 600;    
+    font-weight: 600;
 }
-.signIn .formCard {
-    width: 380px;
-    line-height: 30px;
-}
-
 .formCard {
-    width: 700px;
+    width: 55vw;
+    min-width: 450px;
     padding: 20px;
     margin: 30px auto;
     border-radius: 10px;
@@ -39,46 +42,17 @@
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
-.formCard input, .formCard select{
+.formCard input, .formCard select {
     width: 100%;
     padding: 12px;
     margin: 7px 0;
     border-radius: 6px;
     outline: none;
-    background-color: var(--primary-color);
-    border: 1px solid var(--outline);
+    background-color: var(--form-input-bg);
+    border: 1px solid var(--form-input-outline);
 }
 .formCard input:hover {
-    border: 1px solid var(--highlight);
-}
-.fullName div{
-    width: 49%;
-}
- .code {
-    width: 15%
-}
-.number  {
-    width: 83%;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.resetCode input {
-    margin: 10px;
-    padding: 20px;
-}
-.cache input{
-    width: 20px;
-    height: 20px;
-    margin: 5px 0;
-}
-.cache label{
-    width: 100%;
-    margin-left: 10px;
-    font-size: 12px;
+    border: 1px solid var(--hover-highlight);
 }
 .form a {
     color: var(--highlight);
@@ -90,36 +64,78 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     font-weight: 400;
     border-radius: 30px;
-    background-color: var(--overlay);
+    background-color: var(--reroute-overlay);
 }
 .resetBtn {
-    color: var(--red);
+    color: var(--password-reset);
     width: 200px;
     border: none;
     background-color: var(--primary-color);
 }
-.verificationCode {
-    margin: 20px 0;
-    color: green;
+
+/* Sign in */
+.signIn {
+    margin-top: 70px;
+}
+.signIn .formCard {
+    width: 380px;
+    line-height: 30px;
+}
+.cache input {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+}
+.cache label {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 12px;
 }
 
+/* Sign up */
+.fullName div {
+    width: 49%;
+}
+.code {
+    width: 15%;
+}
+.number {
+    width: 83%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.password button {
+    position: absolute;
+    margin: 20px 0 0 -30px;
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Media query for mobile phones */
 @media only screen and (max-width: 450px) {
     .signIn .formCard,
-    .passwordReset .formCard {
+    .passwordReset .formCard,
+    .formCard {
         width: 350px;
-        margin: 30px 0 30px -13px;
+        margin: 15px auto;
+        height: fit-content;
     }
     .signUp .formCard {
         width: 350px;
         margin: 10px 0 20px -12px;
     }
-    .formCard {
-        width: 360px;
-        margin: 15px auto;
-        height: fit-content;
-
-   }
-    .resetCode input{
+    .code input {
+        width: 90px;
+    }
+    .number input {
+        width: 210px;
+        margin-left: 45px;
+    }
+    .resetCode input {
         width: 80%;
         margin: 10px;
         padding: 12px;
@@ -131,12 +147,4 @@ input::-webkit-inner-spin-button {
         font-size: 15px;
         margin: 10px 0;
     }
-    .code input{
-        width: 90px;
-    }
-    .number input{
-        width: 210px;
-        margin-left: 45px;
-    }
-    
 }

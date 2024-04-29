@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import style from "./auth.module.css";
-import { FaHeartbeat } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "./context/fireBase";
+import style from "./auth.module.css";
 import { Button } from "../Buttons/Buttons";
+import { Logo } from "../Home/Header/Header";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export function SignIn() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState("false");
+  const [rememberMe, setRememberMe] = useState("false");
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -34,23 +38,25 @@ export function SignIn() {
     }
   };
 
-  // Function to handle forgot password
-  const handleForgotPassword = () => {
-    // Simulate sending a code to the user's email
-    toast.info("We have sent a six-digit code to your email.");
-    // Navigate to the password reset page
-    navigate("/reset");
+  const handleForgotPassword = async () => {
+    try {
+      await sendPasswordResetEmail(auth, email);
+      toast.success("Password reset email sent! Check your inbox.");
+    } catch (error) {
+      console.log(error.message);
+      toast.error(`Error: ${error.message}`);
+    }
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
   return (
     <div className={style.body}>
       <ToastContainer />
-
       <div className={`${style.form} ${style.signIn}`}>
-        <h2>
-          Mindful
-          <FaHeartbeat />
-        </h2>
+        <Logo />
         <div className={style.formCard}>
           <form onSubmit={onSubmit}>
             <div>
@@ -66,11 +72,11 @@ export function SignIn() {
               />
             </div>
 
-            <div>
+            <div className={style.password}>
               <label htmlFor="password">Password:</label>
               <br />
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 id="password"
                 name="password"
                 placeholder="Password"
@@ -78,9 +84,17 @@ export function SignIn() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
+              <button type="button" onClick={toggleShowPassword}>
+                {showPassword ? <FaEye /> : <FaEyeSlash />}
+              </button>
             </div>
             <div className={style.cache}>
-              <input type="checkbox" id="cache" name="cache" />
+              <input
+                type="checkbox"
+                id="cache"
+                name="cache"
+                onChange={(e) => setRememberMe(e.target.value)}
+              />
               <label htmlFor="cache">Remember me for 30 days</label>
               <button onClick={handleForgotPassword} className={style.resetBtn}>
                 Forgot Password?

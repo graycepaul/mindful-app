@@ -9,8 +9,8 @@ export const CustomModal = ({ isOpen, closeModal }) => {
       onRequestClose={closeModal}
       shouldCloseOnOverlayClick={false}
       contentLabel="Example Modal"
-      className={style.modal} // Assign class to modal content
-      overlayClassName={style.overlay} // Assign class to overlay
+      className={style.modal}
+      overlayClassName={style.overlay}
     >
       <button className={style.modalButton} onClick={closeModal}>
         X

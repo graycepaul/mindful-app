@@ -1,5 +1,6 @@
 /* ----------------------------------------- */
 /* Flex container for various sections */
+
 .flexContainer
 {
     display: flex;
@@ -8,11 +9,14 @@
     width: 100%;
     height: fit-content;
 }
-
+.userPage {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
 /* Header Navigation */
 /* ----------------------------------------- */
 .navigation {
-    margin: 20px 40px;
+    padding: 20px 0 20px 60px;
     border-radius: 10px;
 }
 .hidden {

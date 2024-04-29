@@ -1,4 +1,4 @@
-import { FaBell, FaHeartbeat, FaQuestion, FaBars } from "react-icons/fa";
+import { FaBell, FaQuestion, FaBars } from "react-icons/fa";
 import style from "./Community/community.module.css";
 import { Link } from "react-router-dom";
 import { Logo } from "../Home/Header/Header";

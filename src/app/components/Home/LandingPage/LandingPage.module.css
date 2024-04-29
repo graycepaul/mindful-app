@@ -11,7 +11,7 @@
 .landingPage {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 10px;
+    padding: 70px 10px 0 0;
     width: 99.9vw;
 }
 .landingPageCont {
@@ -84,15 +84,17 @@
 .callToAction {
     text-align: center;
     background-color: var(--btn);
-    color: var(--primary-color);
+    color: var(--nav-mobile);
     padding: 16px 24px;
     letter-spacing: 0.7px;
     text-decoration: none;
     border-radius: 8px;
 }
+
+/* About us */
 .description {
     background-color: #1F1B50;;
-    color: #fff;
+    color: var(--nav-mobile);
     padding: 100px 50px;
     height: fit;
     overflow: hidden;
@@ -111,8 +113,8 @@
 }
 .mission a{
   text-decoration: none;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--nav-mobile);
+  color: var(--nav-mobile);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -142,10 +144,11 @@
     display: block;
     height: 50vh;
    }
+
    .hero {
     text-align: left;
     width: 80%;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 .hero h1{
     margin: 0;

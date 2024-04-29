@@ -17,19 +17,21 @@ import { CustomModal } from "./Modal";
 export const Community = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  function openModal() {
+  const openModal = () => {
     setIsOpen(true);
-  }
+  };
 
-  function closeModal() {
+  const closeModal = () => {
     setIsOpen(false);
-  }
+  };
 
   return (
     <div className={style.userPage}>
-      <UserNav className={style.navBar} />
-      <div className={`${style.communities} ${style.flexContainer}`}>
-        <div className={style.myCommunity}>
+      <header>
+        <UserNav className={style.navBar} />
+      </header>
+      <main className={`${style.communities} ${style.flexContainer}`}>
+        <section className={style.myCommunity}>
           <h2>&#60; My Feeds</h2>
           <button onClick={openModal}>+ Post</button>
           <CustomModal isOpen={modalIsOpen} closeModal={closeModal} />{" "}
@@ -48,8 +50,8 @@ export const Community = () => {
               <p>Soda Overcomers</p>
             </div>
           </div>
-        </div>{" "}
-        <div className={style.UserFeeds}>
+        </section>{" "}
+        <section className={style.UserFeeds}>
           <div className={style.userPosts}>
             <div>
               <img
@@ -98,8 +100,8 @@ export const Community = () => {
               />
             </div>
           </div>
-        </div>{" "}
-        <div className={style.forYou}>
+        </section>{" "}
+        <section className={style.forYou}>
           <div className={style.forYouHeader}>
             <h2>Communities for you</h2>
             <h4>Explore All &#x2192;</h4>
@@ -136,158 +138,8 @@ export const Community = () => {
               className={`${style.forYouPost} ${style.flexContainer}`}
             />
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 };
-
-// import React, { useState, useEffect } from "react";
-// import { FaUser } from "react-icons/fa";
-// import style from "./userPage.module.css";
-// import { Post } from "./Posts";
-// import { UserNav } from "./UserNav";
-
-// export const UserPage = () => {
-//   const [newChat, setNewChat] = useState("");
-//   const [posts, setPosts] = useState([]);
-
-//   // Load posts from localStorage on component mount
-//   useEffect(() => {
-//     const storedPosts = JSON.parse(localStorage.getItem("posts"));
-//     console.log("Retrieved posts from localStorage:", storedPosts);
-//     if (storedPosts) {
-//       setPosts(storedPosts);
-//     }
-//   }, []);
-
-//   // Save posts to localStorage whenever posts state changes
-//   useEffect(() => {
-//     console.log("Saving posts to localStorage:", posts);
-//     localStorage.setItem("posts", JSON.stringify(posts));
-//   }, [posts]);
-
-//   const handleNewChat = (e) => {
-//     setNewChat(e.target.value);
-//   };
-
-//   const handleNewChatSubmit = () => {
-//     if (newChat.trim() !== "") {
-//       const newPost = {
-//         id: Date.now(),
-//         pic: feedsDp,
-//         title: "Safe Space",
-//         name: "Anonymous",
-//         text: newChat,
-//         likes: 0,
-//         comments: [],
-//         upload: null,
-//         timestamp: new Date().toLocaleString(), // Add timestamp
-//       };
-//       setPosts([newPost, ...posts]);
-//       setNewChat("");
-//     }
-//   };
-
-//   const handleLike = (postId) => {
-//     const updatedPosts = posts.map((post) =>
-//       post.id === postId ? { ...post, likes: post.likes + 1 } : post
-//     );
-//     setPosts(updatedPosts);
-//   };
-
-//   const handleComment = (postId, comment) => {
-//     const updatedPosts = posts.map((post) =>
-//       post.id === postId
-//         ? { ...post, comments: [...post.comments, comment] }
-//         : post
-//     );
-//     setPosts(updatedPosts);
-//   };
-
-//   const handleImageUpload = (postId, image) => {
-//     const updatedPosts = posts.map((post) =>
-//       post.id === postId ? { ...post, upload: image } : post
-//     );
-//     setPosts(updatedPosts);
-//   };
-
-//   return (
-//     <div className={style.userPage}>
-//       <UserNav className={style.navBar} />
-//       <div className={style.communities}>
-//         <div className={style.myCommunity}>
-//           <button>+ Post</button>
-//           <div className={style.members}>
-//             <h3>My Community</h3>
-//             <div>
-//               <img src={feedsDp} alt="user id" />
-//               <p>Safe space</p>{" "}
-//             </div>
-//             <div>
-//               <img src={feedsDp} alt="user id" />
-//               <p>Safe space</p>
-//             </div>
-//             <div>
-//               <img src={feedsDp} alt="user id" />
-//               <p>Safe space</p>
-//             </div>
-//           </div>
-//         </div>
-//         <div className={style.UserFeeds}>
-//           <input
-//             type="text"
-//             placeholder="Start a new chat"
-//             value={newChat}
-//             onChange={handleNewChat}
-//           />
-//           <button onClick={handleNewChatSubmit}>Submit</button>
-//           <div className={style.userPosts}>
-//             {/* User posts section */}
-//             {posts.map((post) => (
-//               <Post
-//                 key={post.id}
-//                 pic={post.pic}
-//                 title={post.title}
-//                 name={post.name}
-//                 text={post.text}
-//                 likes={post.likes}
-//                 comments={post.comments}
-//                 upload={post.upload}
-//                 timestamp={post.timestamp}
-//                 onLike={() => handleLike(post.id)}
-//                 onComment={(comment) => handleComment(post.id, comment)}
-//                 onImageUpload={(image) => handleImageUpload(post.id, image)}
-//               />
-//             ))}
-//           </div>
-//         </div>
-//         <div className={style.forYou}>
-//           <h2>Communities for you</h2>
-//           <h4>Explore All</h4>
-//           {/* Placeholder content for Communities for you section */}
-//           <div>
-//             <img src={minionDp} alt="Community" />
-//             <p>The Work-life Family</p>
-//           </div>
-//           <div>
-//             <img src={foodDp} alt="Community" />
-//             <p>The Work-life Family</p>
-//           </div>
-//           <div>
-//             <img src={landscapeDp} alt="Community" />
-//             <p>The Work-life Family</p>
-//           </div>
-//           <div>
-//             <img src={seaDp} alt="Community" />
-//             <p>The Work-life Family</p>
-//           </div>
-//           <div>
-//             <img src={abstractDp} alt="Community" />
-//             <p>The Work-life Family</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };

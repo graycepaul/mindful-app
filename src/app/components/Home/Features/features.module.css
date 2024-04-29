@@ -22,8 +22,11 @@
     line-height: 30px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    color: #000;
+    color: var(--secondary-color);
     background-color: var(--card-bg);
+}
+.card:nth-child(1), .card:nth-child(2) {
+    padding: 45px 20px;
 }
 .card img {
     width: 200px;
@@ -62,13 +65,15 @@
     margin: 10px 0;
     border-radius: 8px;
     padding: 20px 24px;
+    color: var(--secondary-color);
     background-color: var(--blue-fade);
 }
 
 .offersList button:hover {
     background-color: var(--btn);
-    color: var(--primary-color);
+    color: var(--nav-mobile);
 }
+
 .offersImg {
     padding: 20px 30px;
     height: 420px;
@@ -76,7 +81,7 @@
     margin-top: 30px;
     border-radius: 10px;
     font-size: 16px;
-    color: var( --secondary-color-fade);
+    color: var( --features-desc);
     overflow: hidden;
     background-color: var(--blue-overlay);
 }

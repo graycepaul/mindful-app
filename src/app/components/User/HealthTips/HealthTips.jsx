@@ -5,10 +5,14 @@ import { UserNav } from "../UserNav";
 export const HealthTip = () => {
   return (
     <div>
-      <UserNav />
-      <div className={styles.container}>
-        <p className={styles.text}>Coming soon...</p>
-      </div>
+      <header>
+        <UserNav />
+      </header>
+      <main>
+        <div className={styles.container}>
+          <p className={styles.text}>Coming soon...</p>
+        </div>
+      </main>
     </div>
   );
 };
