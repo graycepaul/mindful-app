@@ -72,27 +72,27 @@ export const Features = ({ toggleLocale, locale }) => {
                   onClick={() => handleButtonClick(OffersImg)}
                   className={style.default}
                 >
-                  <FormattedMessage id="OffersImg" />
+                  <FormattedMessage id="Goalsbtn" />
                 </button>
               </li>
               <li>
                 <button onClick={() => handleButtonClick(Community)}>
-                  <FormattedMessage id="Community" />
+                  <FormattedMessage id="Communitybtn" />
                 </button>
               </li>
               <li>
                 <button onClick={() => handleButtonClick(Journal)}>
-                  <FormattedMessage id="Journal" />
+                  <FormattedMessage id="Journalbtn" />
                 </button>
               </li>
               <li>
                 <button onClick={() => handleButtonClick(Therapy)}>
-                  <FormattedMessage id="Therapy" />
+                  <FormattedMessage id="Therapybtn" />
                 </button>
               </li>
               <li>
                 <button onClick={() => handleButtonClick(HelpLine)}>
-                  <FormattedMessage id="HelpLine" />
+                  <FormattedMessage id="HelpLinebtn" />
                 </button>
               </li>
             </ul>

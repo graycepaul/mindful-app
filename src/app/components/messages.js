@@ -25,6 +25,15 @@ export const hausaMessages = {
 
   //FEATURES HAUSA
   keyBenefits: "Kalmar Yanayi",
+
+  offersHeader: "Me Ya Sanya Mindful?",
+  Goalsbtn: "Raga",
+  Communitybtn: "Al'umma",
+  Journalbtn: "Jarida",
+  Therapybtn: "Jiyya",
+  HelpLinebtn: "Layin Taimako",
+
+  offersDescription: "Inda Aikin Karatun Bincike Ya Fuskanta Wannan.",
   OffersImg:
     "Maida hanyar kwanan nan, mako ko ranar ranar ko watau da wata, da daf da nau'ikan ka",
   Community: "Kawo matsaloli da ita, fadakar da kuma bayyana taimakonmu.",
@@ -65,7 +74,7 @@ export const hausaMessages = {
 
   // FOOTER HAUSA
   about: "Game da",
-  blog: "Alog",
+  blog: "Blog",
   community: "al'umma",
   careers: "Ayyuka",
   hiring: "daukar aiki",
@@ -102,6 +111,12 @@ export const englishMessages = {
 
   //FEATURES ENGLISH
   keyBenefits: "Key Benefits",
+  Goalsbtn: "Goals",
+  Communitybtn: "Community",
+  Journalbtn: "Journal",
+  Therapybtn: "Therapy",
+  HelpLinebtn: "HelpLine",
+
   OffersImg:
     "Set daily, weekly or monthly achievable goals and track your progress",
   Community: "Connect with peers, share experiences, and offer support.",
