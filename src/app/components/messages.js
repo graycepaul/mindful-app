@@ -15,7 +15,7 @@ export const hausaMessages = {
     "Mindful app ya canza wasa na a cikin fama da jaraba.",
   landingPageTestimonial3:
     "Na gode wa al'umma da ƙarfafawa da ke kawo wa tafiyar ta murmurewa.",
-  landingPageTitle: "Sauyi Lafiyar",
+  landingPageTitle: "Sauyi Lafiyar ",
   landingPageTitleSpan: "Hauka",
   landingPageDescription: "Haɓaka Al'umma Taimako don Dorewar Farfaɗo",
   landingPageCTA: "Fara kyauta",
@@ -25,6 +25,16 @@ export const hausaMessages = {
 
   //FEATURES HAUSA
   keyBenefits: "Kalmar Yanayi",
+
+  virtualTherapyTitle: "Zama na Farko",
+  SupportTitle: "Tallafin 24/7",
+  PersonalizedResourcesTitle: "Abubuwan da aka Keɓance",
+  virtualTherapy:
+    "Samar da masu warkarwa masu lasisi ta hanyar kiran bidiyo ko taɗi don goyan bayan keɓaɓɓen lokaci, kowane lokaci, ko'ina.",
+  Support:
+    "Sami taimako na kowane lokaci, jagora, da tausayawa a duk lokacin da ake buƙata, tabbatar da cewa ba ku kaɗai ba a cikin tafiyarku.",
+  PersonalizedResources:
+    "Karɓi shawarwarin da aka keɓance, gami da jagororin tunani, dabarun jurewa, da kayan ilimi, dangane da buƙatunku na musamman da abubuwan da kuka zaɓa.",
 
   offersHeader: "Me Ya Sanya Mindful?",
   Goalsbtn: "Raga",
@@ -111,6 +121,16 @@ export const englishMessages = {
 
   //FEATURES ENGLISH
   keyBenefits: "Key Benefits",
+  virtualTherapyTitle: "Virtual Therapy Session",
+  SupportTitle: "24/7 Support",
+  PersonalizedResourcesTitle: "Personalized Resources",
+  virtualTherapy:
+    "Access licensed therapists through video calls or chat for personalized support, anytime, anywhere.",
+  Support:
+    "Get round-the-clock assistance, guidance, and empathy whenever needed, ensuring you're never alone in your journey.",
+  PersonalizedResources:
+    "Receive tailored recommendations, including guided meditations, coping strategies, and educational materials, based on your unique needs and preferences.",
+
   Goalsbtn: "Goals",
   Communitybtn: "Community",
   Journalbtn: "Journal",

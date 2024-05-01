@@ -18,13 +18,17 @@
 .navigation {
     padding: 20px 0 20px 60px;
     border-radius: 10px;
+    width: 100vw;
+}
+.logo div {
+    width: 130px;
 }
 .hidden {
     display: none;
 }
 .navList {
     width: 380px;
-    margin-right: 500px;
+    margin-right: 20vw;
 }
 .navList li {
     list-style: none;
@@ -45,7 +49,7 @@
 }
 .icons {
     width: 300px;
-    margin-right: 100px;
+    margin-right: 5%;
     color: #53666E;
     gap: 10px;
 }

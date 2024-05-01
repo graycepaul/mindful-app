@@ -13,6 +13,7 @@ import { HealthTip } from "./User/HealthTips/HealthTips";
 import { hausaMessages, englishMessages } from "./messages";
 
 const ThemeContext = createContext();
+
 function App() {
   const [locale, setLocale] = useState("en");
   const [theme, setTheme] = useState("light");

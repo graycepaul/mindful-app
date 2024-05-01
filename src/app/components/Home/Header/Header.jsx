@@ -28,7 +28,9 @@ export function Header({ toggleTheme, theme, toggleLocale, locale }) {
             <nav className={style.navigation}>
               <ul className={style.navList}>
                 <li>
-                  <FormattedMessage id="aboutUs" defaultMessage="About Us" />
+                  <a href="#about">
+                    <FormattedMessage id="aboutUs" defaultMessage="About Us" />
+                  </a>
                 </li>
                 <li>
                   <a href="#offers">

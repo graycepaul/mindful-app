@@ -10,7 +10,9 @@ export function UserNav() {
   return (
     <header className={style.header}>
       <nav className={`${style.navigation} ${style.flexContainer}`}>
-        <Logo />
+        <div className={style.logo}>
+          <Logo />
+        </div>
         <div className={style.mobile}>
           <span className={style.hidden}>
             <FaBars className={style.menuIcon} />

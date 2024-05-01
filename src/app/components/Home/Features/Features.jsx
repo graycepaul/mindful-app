@@ -41,20 +41,20 @@ export const Features = ({ toggleLocale, locale }) => {
         <section className={style.featuresCards}>
           <Card
             src={UserIcon}
-            title={<FormattedMessage id="Therapy" />}
-            text={<FormattedMessage id="Therapy" />}
+            title={<FormattedMessage id="virtualTherapyTitle" />}
+            text={<FormattedMessage id="virtualTherapy" />}
             className={style.card}
           />
           <Card
             src={SupportIcon}
-            title={<FormattedMessage id="HelpLine" />}
-            text={<FormattedMessage id="HelpLine" />}
+            title={<FormattedMessage id="SupportTitle" />}
+            text={<FormattedMessage id="Support" />}
             className={style.card}
           />
           <Card
             src={Resources}
-            title={<FormattedMessage id="Journal" />}
-            text={<FormattedMessage id="Journal" />}
+            title={<FormattedMessage id="PersonalizedResourcesTitle" />}
+            text={<FormattedMessage id="PersonalizedResources" />}
             className={style.card}
           />
         </section>
