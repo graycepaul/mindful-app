@@ -37,29 +37,36 @@
 .actionBtn {
   background-color: var(--btn);
   padding: 10px 30px;
-  color: var(--primary-color);
+  color: var(--nav-mobile);
   border-radius: 8px;
   letter-spacing: 0.7px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 
 .userAuth .login, .toggleBtn {
   background-color: var(--primary-color);
   color: var(--grey);
   margin-left: 30px;
 }
-
+.userAuth .signup {
+  color: var(--nav-mobile)
+}
 .actionBtn:hover {
   background-color: var(--highlight);
   color: var(--primary-color);
 }
+
 .toggleLang {
   padding: 5px;
   margin-left: 10px;
-  border: 3px solid #000;
+  border: 2px solid var(--btn);
   border-radius: 8px;
-  color: #000;
+  color: var(--btn);
+  background-color: var(--primary-color);
 }
+
+
 /* Responsive styles */
 @media only screen and (max-width: 840px) {
   .header {

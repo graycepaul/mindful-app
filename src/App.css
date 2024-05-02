@@ -14,6 +14,7 @@
   --secondary-color: #000;
   --nav-mobile: #fff;
   --btn: #4C51C1;
+  
 
   /* Authentication */
   --form-bg: #000000d6;
@@ -36,14 +37,13 @@
   --mission-blue: #1F1B50;
 
   /* Features */
-  --grey: #80808096; 
   --card-bg: #fff;
   --blue-fade: #768af93e;
   --features-desc: #000000d6;
   --blue-overlay: #100ab512;
 
   /* Articles */
-  --grey: #80808096; 
+  --grey: #535151; 
   --tips-green: #83AF31;
   --grey-tips-text: #808080;
 

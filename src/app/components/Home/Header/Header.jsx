@@ -56,7 +56,10 @@ export function Header({ toggleTheme, theme, toggleLocale, locale }) {
                 >
                   <FormattedMessage id="login" defaultMessage="Login" />
                 </Link>
-                <Link to="/signup" className={style.actionBtn}>
+                <Link
+                  to="/signup"
+                  className={`${style.signup} ${style.actionBtn}`}
+                >
                   <FormattedMessage id="signUp" defaultMessage="Sign Up" />
                 </Link>
                 <button onClick={toggleLocale} className={style.toggleLang}>

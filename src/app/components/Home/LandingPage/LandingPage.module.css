@@ -36,7 +36,7 @@
 .hero p {
     margin: 30px 0 40px 0;
     font-size: 18px;
-    color: var(--grey);
+    color: #535151;
     letter-spacing: 1px;
 }
 .chatBubble {
@@ -53,8 +53,8 @@
 .leftChatBubble {
     position: absolute;
     transform: rotate(5deg);
-    left: 8%;
-    top: 65%;
+    left: 6%;
+    top: 60%;
 }
 .middleChatBubble {
     width: fit-content;
