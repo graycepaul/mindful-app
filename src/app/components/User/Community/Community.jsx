@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Feed } from "./Feeds";
 import minionDp from "../../../../assets/images/minionDp.png";
 import foodDp from "../../../../assets/images/foodDp.png";
+import feedsDp from "../../../../assets/images/feedsDp.png";
 import landscapeDp from "../../../../assets/images/landscapeDp.png";
 import seaDp from "../../../../assets/images/seaDp.png";
 import abstractDp from "../../../../assets/images/abstractDp.png";
 import postImg from "../../../../assets/images/postImg.png";
-import feedsDp from "../../../../assets/images/feedsDp.png";
 import coverPhoto from "../../../../assets/images/coverPhoto.png";
 import { FaUser } from "react-icons/fa";
 import style from "./community.module.css";
@@ -16,13 +16,13 @@ import { CustomModal } from "./Modal";
 
 export const Community = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [posts, setPosts] = useState([]);
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
 
-  const closeModal = () => {
-    setIsOpen(false);
+  const addPost = (newPost) => {
+    setPosts([newPost, ...posts]);
   };
 
   return (
@@ -34,7 +34,11 @@ export const Community = () => {
         <section className={style.myCommunity}>
           <h2>&#60; My Feeds</h2>
           <button onClick={openModal}>+ Post</button>
-          <CustomModal isOpen={modalIsOpen} closeModal={closeModal} />{" "}
+          <CustomModal
+            isOpen={modalIsOpen}
+            closeModal={closeModal}
+            addPost={addPost}
+          />{" "}
           <div className={style.communityTopics}>
             <h3>My Community</h3>
             <div className={`${style.communityList} ${style.flexContainer}`}>
@@ -50,7 +54,7 @@ export const Community = () => {
               <p>Soda Overcomers</p>
             </div>
           </div>
-        </section>{" "}
+        </section>
         <section className={style.UserFeeds}>
           <div className={style.userPosts}>
             <div>
@@ -67,40 +71,19 @@ export const Community = () => {
                 <button>Leave</button>
               </div>
             </div>
-            <div className={`${style.newPost} ${style.flexContainer}`}>
-              <span id={style.userIcon}>
-                <FaUser />
-              </span>
-              <input
-                type="text"
-                name="new-feed"
-                id="new-feed"
-                placeholder='Post "anonymously"'
-              />
-            </div>
             <div className={style.postsHistory}>
+              {posts.length > 0
+                ? posts.map((post, index) => <Post key={index} text={post} />)
+                : ""}
+              <Post text="By understanding stress, identifying triggers, developing healthy coping strategies, practicing persistence, and seeking professional support... read more" />
+              <Post text="By understanding stress, identifying triggers, developing healthy coping strategies, practicing persistence, and seeking professional support... read more" />
               <Post
-                pic={feedsDp}
-                title="Safe space"
-                name="Young boi"
-                text="By understanding stress, identifying triggers, developing healthy coping strategies, practicing persistence, and seeking professional support... read more"
-              />
-              <Post
-                pic={feedsDp}
-                title="Safe space"
-                name="Young boi"
-                text="By understanding stress, identifying triggers, developing healthy coping strategies, practicing persistence, and seeking professional support... read more"
-              />{" "}
-              <Post
-                pic={feedsDp}
-                title="Safe space"
-                name="Young boi"
                 text="By understanding stress, identifying triggers, developing healthy coping strategies, practicing persistence, and seeking professional support... read more"
                 upload={postImg}
               />
             </div>
           </div>
-        </section>{" "}
+        </section>
         <section className={style.forYou}>
           <div className={style.forYouHeader}>
             <h2>Communities for you</h2>

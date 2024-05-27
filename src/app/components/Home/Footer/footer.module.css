@@ -25,6 +25,9 @@
     text-decoration: none;
     color: #fff;
 }
+.footerContent a:hover {
+    color: #ff04e27d;
+}
 .footNote div {
     line-height: 40px;
 }

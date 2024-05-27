@@ -16,9 +16,9 @@
 /* Header Navigation */
 /* ----------------------------------------- */
 .navigation {
-    padding: 20px 0 20px 60px;
+    padding: 20px 0 15px 60px;
     border-radius: 10px;
-    width: 100vw;
+    width: 99vw;
 }
 .logo div {
     width: 130px;
@@ -170,10 +170,9 @@
 /* List of posts the user has made*/
 .UserFeeds {
     width: 650px;
-    height: 850px;
     padding: 0 10px;
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     border: 1px solid rgba(128, 128, 128, 0.18);
 }
 
@@ -181,7 +180,7 @@
 .userPosts {
     border: 1px solid #8080803e;
     border-radius: 7px;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 /* feeds Profile */
 .userProfile {
@@ -192,11 +191,11 @@
 }
 .coverPhoto {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 7px 7px 0 0;
 }
 .postsHistory {
     overflow: scroll;
-    height: 390px;
+    max-height: 775px;
 }
 .postsHistory::-webkit-scrollbar {
     display: none;
@@ -230,6 +229,7 @@
 }
 .userPosts input {
     border: 1px solid #8080803e;
+    background-color: red;
 }
 .postHeader {
     width: 400px;
@@ -251,18 +251,14 @@
 /* List of communities available to the user */
 .forYou {
     width: 450px;
-    height: 1370px;
     border: 1px solid #8080803e;
     border-radius: 10px;
-    max-height: 850px;
+    max-height: 1200px;
     margin: 0px auto;
-}
-.feeds {
     overflow: scroll;
-    height: 750px;
 }
-.feeds::-webkit-scrollbar {
-    display: none; /* This line hides the scrollbar */
+.feeds::-webkit-scrollbar, .forYou::-webkit-scrollbar {
+    display: none; 
 }
 
 .forYou button, 
@@ -288,18 +284,18 @@
     font-weight: 600;
     font-size: 14px;
 }
-.followers {
+.followersIcon {
     margin-left: 40px;
 }
 .followersCount {
-    margin-left: -150px;
+    margin-left: -200px;
 }
 .forYouPost:nth-child(1) {
     width: 100%;
     margin: 20px 0;
     padding: 20px;
     font-size: 14px;
-    border-top: 1px solid var(--grey);
+    border-top: 1px solid rgba(128, 128, 128, 0.222);
 }
 .forYouPost div:nth-child(2) {
     margin-left: 20px;
@@ -310,18 +306,21 @@
     margin: 10px;
 }
 
+
+/* Tablet and mobile phones */
 @media only screen and (max-width: 840px){
     .UserFeeds, .forYou {
-        margin: -40px;
+        margin: 0px;
         height: fit-content;
     }
     .UserFeeds {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .userPosts {
         border: 1px solid var(--grey);
         border-radius: 7px;
         margin: 20px 0;
+        overflow: scroll;
     }
     .postsHistory, .feeds {
         overflow: visible;
@@ -337,10 +336,6 @@
     .forYouPost .followers{
         margin-right: 50px;
     } 
-    /* .navigation {
-        width: 90vw;
-        margin: 20px;
-    } */
     .navigation {
         text-align: center;
         border-radius: 0;
@@ -350,34 +345,32 @@
         position: fixed;
         background-color: var(--primary-color);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.497);
-      }
+    }
     .hidden {
         display: block;
     }
     .header {
         width: 99vw;
         padding: 30px 0;
-      }
+    }
     .navList {
         display: none;
-      position: absolute;
-      flex-direction: column;
-      left: 0%;
-      margin: 0;
-      width: 99vw;
-      background-color: #020547;
+        position: absolute;
+        flex-direction: column;
+        left: 0%;
+        margin: 0;
+        width: 99vw;
+        background-color: #020547;
     }
     .navList li {
-        padding: 10px 0;
-    }
-    .navList li:nth-child(2) {
-        border-bottom: 3px solid orangered;
+        padding: 30px 0;
     }
     .navList a:hover {
+        display: block;
         border-bottom: 3px solid orangered;
     }
     .icons {
-      display: none;
+        display: none;
     }
     .menuIcon {
         position: relative;
@@ -391,5 +384,22 @@
     }
     .mobile:hover .navList {
         display: block;
-      }
+    }
+}
+
+
+    /* Mobile phones */
+@media only screen and (max-width: 450px){
+    .UserFeeds, .forYou {
+        margin-left: -40px;
+    } 
+    .postsHistory {
+        margin: -30px 0;
+    }
+    .postTitle {
+        margin-right: 40px;
+    }
+    .followersCount {
+        margin-left: -70px;
+    }
 }

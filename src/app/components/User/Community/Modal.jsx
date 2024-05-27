@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactModal from "react-modal";
 import style from "./community.module.css";
 
-export const CustomModal = ({ isOpen, closeModal }) => {
+export const CustomModal = ({ isOpen, closeModal, addPost }) => {
+  const [userInput, setUserInput] = useState("");
+
+  const handleInput = (e) => {
+    setUserInput(e.target.value);
+  };
+
+  const handleAddPost = (e) => {
+    e.preventDefault();
+    addPost(userInput);
+    closeModal();
+  };
+
   return (
     <ReactModal
       isOpen={isOpen}
@@ -26,12 +38,15 @@ export const CustomModal = ({ isOpen, closeModal }) => {
         <textarea
           name="post"
           id="post"
-          cols="300"
-          rows="4"
-          placeholder="How do i get over the urge of smoking please?"
+          cols="40"
+          rows="9"
+          onChange={handleInput}
+          placeholder="How do i get over the urge of smoking please?..."
         ></textarea>
         <br />
-        <button>POST</button>
+        <button type="submit" onClick={handleAddPost}>
+          POST
+        </button>
       </form>
     </ReactModal>
   );

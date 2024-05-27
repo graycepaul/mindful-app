@@ -1,6 +1,6 @@
-import mobileApp from "../../../assets/images/mobileApp.png";
-import { hausaMessages, englishMessages } from "../messages";
-import map from "../../../assets/images/map.png";
+import mobileApp from "../../../../assets/images/mobileApp.png";
+import { hausaMessages, englishMessages } from "../../messages";
+import map from "../../../../assets/images/map.png";
 import style from "./map.module.css";
 import { FormattedMessage } from "react-intl";
 

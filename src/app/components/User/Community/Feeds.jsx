@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 
 export const Feed = ({ pic, title, text, className }) => {
   return (
-    <div>
+    <div className={style.feedsContainer}>
       <div>
         <div className={className}>
           <img src={pic} alt="user id" />
@@ -13,9 +13,9 @@ export const Feed = ({ pic, title, text, className }) => {
             <p>{text}</p>
           </div>
         </div>
-        <div className={className}>
+        <div className={`${className} ${style.followers}`}>
           <a href="#/followers">
-            <FaUser className={style.followers} />
+            <FaUser className={style.followersIcon} />
           </a>
           <p className={style.followersCount}>10k</p>
           <div>

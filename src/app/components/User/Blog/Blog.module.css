@@ -22,8 +22,9 @@
     font-size: 12px;
     font-weight: 400;
     width: 50%;
+    height: 170px;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 .blogHero h2 {
     font-size: 40px;
@@ -33,11 +34,11 @@
 .blogHero input {
     width: 700px;
     height: 60px;
-    border-radius: 20px;
     border: none;
-    margin: 0 27%;
+    border-radius: 20px;
+    margin-left: 27%;
     padding: 0 20px;
-    box-shadow: 0 0 5px var(--secondary-color-fade);
+    box-shadow: 0 0 5px var(--grey);
 }
 
 /* Section 2: blog snippet */
@@ -61,9 +62,12 @@
     font-size: 40px;
 }
 .blogDate {
-    font-size: 16px;
-    width: 340px;
+    width: max-content;
+    gap: 15px;
     margin: 30px auto;
+}
+.blogDate p {
+    margin-bottom: 10px;
 }
 .snippetDesc {
     font-size: 14px;
@@ -82,11 +86,14 @@
 /* Section3: Blog cards */
 .blogCards {
     width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     flex-wrap: wrap;
 }
 .blogCard1 {
     width: 652px;
+}
+.blogCard1 > img{
+    margin: 30px auto;
 }
 .blogCard2 {
     width: 415px;
@@ -108,12 +115,8 @@
     text-decoration: none;
     color: var(--highlight);
 }
-.blogCards img {
-    margin: 20px 50px 0 0;
-}
 .getFeatured button {
-    margin: 20px 0;
-    
+    margin: 20px 0;   
 }
 .blogCard1 h2 {
     font-size: 36px;
@@ -172,6 +175,7 @@
 }
 .lifestyleCategory {
     width: 350px;
+    margin: 10px;
 }
 .allCategories .blogDate {
     margin: 0;
@@ -183,7 +187,7 @@
 }
 .allCategories h4 {
     color: var(--highlight);
-    font-size:  20px;
+    font-size:  16px;
     font-weight: 500;
     margin: 10px 30px 20px 0;
 }
@@ -236,13 +240,40 @@
 .subscribe p {
     margin-right: 50px;
 }
-
-@media only screen and (max-width: 768px) {    
-    .blog {
-        padding: 20px;
+@media only screen and (min-width: 1001px) and (max-width: 1300px){  
+    .blogHero input {
+        margin-left: 300px;
     }
+
+}  
+
+
+@media only screen and (min-width: 760px) and (max-width: 1000px){    
+    .blog input {
+        margin: 0 8%;
+    }
+    .snippetContent {
+        width: fit-content;
+    }
+    .blogCards {
+        padding-left: 40px;
+    }
+    .blogCard1 > img, .featuredBlog > img, .getFeatured{
+        width: 95vw;
+    }
+    .lifestyleCategory {
+        margin: 0 auto;
+    }
+    .lifestyleCategory:nth-child(3){
+        display: flex;
+        margin: 0;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 750px) {    
     .blogHero {
-        width: 92vw;
+        width: 100vw;
         height: fit-content;
     }
     .blogHero h2, .blogHero h1 {
@@ -260,12 +291,11 @@
         width: 90%;
     }
     .blogSnippet {
-        width: 92vw;
+        width: 100vw;
         padding: 50px 20px;
         background: linear-gradient(#3B002D, #601901);
         height: fit-content;
         border-radius: 0 0 20px 20px;
-        /* overflow: auto; */
         text-align: start;
         margin: 0 0 40px 0 ;
     }
@@ -279,8 +309,11 @@
     }
     .blogDate {
         font-size: 14px;
-        width: 310px;
+        width: 270px;
         margin: 30px 0;
+    }
+    .blogCards .blogDate img{
+       margin-top: 15px;
     }
     .snippetDesc {
         width: 90%;
@@ -293,15 +326,16 @@
     }
     .getFeatured {
         width: 90vw;
-        margin: 10px auto;
+        margin: 10px 0;
+    }
+    .getFeatured div {
+        margin: -18% 0 0 75%;
     }
     .featuredBlog:nth-child(2) {
         width: 100vw;
         margin: 10px 0 50px 0;
     }
-    .getFeatured div {
-        margin: -10% 0 0 84%;
-    }
+  
     .featuredBlog > img, .blogCard1 > img {
         width: 90vw;
     }
@@ -337,9 +371,18 @@
     .blogCategories {
         margin: 0 5px;
     } 
+    .loadMore {
+        margin-left: 30%;
+    }
+    .newsLetter {
+        padding: 0 30px;
+    } 
     .newsLetter p {
         width: 320px;
-        margin: 20px 0;
+        margin-top: 20px;
+    }
+    .newsLetter form {
+        margin-top: -60px;
     }
     .subscribe {
         flex-direction: column;

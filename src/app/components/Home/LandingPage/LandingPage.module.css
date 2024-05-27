@@ -11,8 +11,7 @@
 .landingPage {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 70px 10px 0 0;
-    width: 99.9vw;
+    padding-top: 70px;
 }
 .landingPageCont {
     height: 70vh;
@@ -96,14 +95,13 @@
     background-color: #1F1B50;;
     color: var(--nav-mobile);
     padding: 100px 50px;
-    height: fit;
     overflow: hidden;
 }
 .descriptionContent {
     flex-wrap: wrap;
 }
 .mission {
-    width: 380px;
+    width: 390px;
     padding: 50px;
     font-size: 16px;
 }
@@ -138,8 +136,10 @@
     width: 100%;
 }
 
+
+/* MEDIA QUERIES */
 /* Tablet */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 900px) {
    .landingPageCont {
     display: block;
     height: 50vh;
@@ -149,22 +149,34 @@
     text-align: left;
     width: 80%;
     margin: 0 auto;
-}
+    }
 .hero h1{
     margin: 0;
     text-align: left;
-}
-   .leftChatBubble, .middleChatBubble, .rightChatBubble{
+    }
+.leftChatBubble, .middleChatBubble, .rightChatBubble{
     position: absolute;
     display: none;
- }
+    }
+}
 
+  @media only screen and (min-width: 845px) and (max-width: 1300px) {
+    .leftChatBubble {
+        margin-top: 20px;
+    }
+    .rightChatBubble {
+        position: absolute;
+        transform: rotate(-6deg);
+        left: 65%;
+        bottom: 208px;
+    }
   }
 
   /* MOBILE PHONES */
   @media only screen and (max-width: 450px) {
     .landingPageCont {
         height: fit-content;
+        margin-top: -110px;
     }
     .hero {
         width: fit-content;
@@ -176,33 +188,22 @@
         margin: 0;
         font-size: 40px;
     }
-       .leftChatBubble, .middleChatBubble, .rightChatBubble{
-        position: absolute;
+    .hero p {
+       margin-bottom: 50px;
+    }
+    .chatBubble{
         display: none;
-     }
-     .leftChatBubble {
-        top: 530px;
-        transform: rotate(0deg);
-     }
-     .middleChatBubble {
-        top: 370px;
-        transform: rotate(0deg);
-     }
-     .rightChatBubble {
-        top: 450px;
-        left: 300px;
-        transform: rotate(0deg);
-  }
-  .description {
-    background-color: var(--mission-blue);
-    color: var(--primary-color);
-    padding: 100px 50px;
-    height: fit;
-    overflow: hidden;
-}
-.descriptionContent {
-    padding: 0;
-    margin: -100px 0 0 -70px;
-    width: 400px;
-}
+    }
+    .missionImg {
+        height: 270px;
+        left: 120px;
+    }
+    .ImgDecoration {
+        bottom: 60px;
+    }
+    .descriptionContent {
+        padding: 0;
+        margin: -100px 0 0 -70px;
+        width: 400px;
+    }
   }

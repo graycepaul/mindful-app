@@ -1,7 +1,7 @@
 /* Body */
 .body {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     padding: 30px;
     background-color: var(--form-bg);
     color: var(--primary-color);
@@ -21,7 +21,7 @@
 .form {
     width: fit-content;
     height: fit-content;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
 }
 .form h2 {
@@ -117,16 +117,14 @@ input::-webkit-inner-spin-button {
 
 /* Media query for mobile phones */
 @media only screen and (max-width: 450px) {
-    .signIn .formCard,
-    .passwordReset .formCard,
-    .formCard {
-        width: 350px;
-        margin: 15px auto;
-        height: fit-content;
+    .form {
+        margin-left: -29px;
     }
-    .signUp .formCard {
-        width: 350px;
-        margin: 10px 0 20px -12px;
+    .formCard {
+        min-width: 100vw;
+    }
+    .signUp  {
+        margin-top: -20px;
     }
     .code input {
         width: 90px;
@@ -134,17 +132,5 @@ input::-webkit-inner-spin-button {
     .number input {
         width: 210px;
         margin-left: 45px;
-    }
-    .resetCode input {
-        width: 80%;
-        margin: 10px;
-        padding: 12px;
-    }
-    .resetBtn {
-        width: 80%;
-    }
-    .verificationCode {
-        font-size: 15px;
-        margin: 10px 0;
     }
 }

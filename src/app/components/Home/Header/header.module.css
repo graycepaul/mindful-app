@@ -5,11 +5,10 @@
   justify-content: space-between;
 }
 .header {
-  width: 100vw;
+  width: 99.9vw;
   padding: 30px 30px 40px 30px;
   color: var(--btn);
   background-color: var(--primary-color);
-  overflow: hidden;
 }
 .navigation {
   width: 75vw;
@@ -83,9 +82,10 @@
     width: 90px;
     margin: 5px 0;
     padding: 5px;
+    color: var(--secondary-color);
+
     background-color: var(--primary-color);
   }
-
   .navList {
     margin: 0;
     gap: 10px;
@@ -112,7 +112,7 @@
   .navigation {
     display: none;
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 0%; 
     background-color: var(--mission-blue);
     border: 1px solid #ccc;
@@ -134,6 +134,10 @@
     color: var(--nav-mobile);
   }
 
+  .navList a:hover {
+    display: block;
+    border-bottom: 3px solid orangered;
+  }
   .menuWrapper:hover .navigation {
     display: block;
   }

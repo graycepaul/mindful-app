@@ -42,16 +42,25 @@ export const Footer = ({ locale }) => {
                 </Link>
               </li>
               <li>
-                <FormattedMessage id="careers" />
+                <a href="#/carreers">
+                  <FormattedMessage id="careers" />
+                </a>
               </li>
               <li>
-                <FormattedMessage id="hiring" />
+                <a href="#/hiring">
+                  <FormattedMessage id="hiring" />
+                </a>
               </li>
               <li>
-                <FormattedMessage id="contactUs" />
+                <a href="#/contact">
+                  <FormattedMessage id="contactUs" />
+                </a>
               </li>
               <li>
-                <FormattedMessage id="press" />
+                <a href="#/press">
+                  {" "}
+                  <FormattedMessage id="press" />
+                </a>
               </li>
             </ul>
           </div>

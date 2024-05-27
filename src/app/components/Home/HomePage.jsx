@@ -3,7 +3,7 @@ import { Footer } from "./Footer/Footer";
 import { Features } from "./Features/Features";
 import { Header } from "./Header/Header";
 import { Articles } from "./Articles/Articles";
-import { Location } from "../Location/Map";
+import { Location } from "./Location/Map";
 
 export function Homepage({ toggleTheme, theme, toggleLocale, locale }) {
   return (

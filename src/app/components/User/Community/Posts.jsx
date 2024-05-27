@@ -1,27 +1,23 @@
 import React from "react";
 import style from "./community.module.css";
-// import Likes from "../../../../assets/icons/HeartStraight.png";
-// import Comment from "../../../../assets/icons/HeartStraight.png";
-// import Share from "../../../../assets/icons/HeartStraight.png";
+import feedsDp from "../../../../assets/images/feedsDp.png";
 
-// import LikesCount from "../../../../assets/icons/HeartStraight.png";
+import { FaHeart, FaComment, FaShare } from "react-icons/fa";
 
-import { FaUser, FaHeart, FaComment, FaShare } from "react-icons/fa";
-
-export const Post = ({ pic, title, text, name, className, upload }) => {
+export const Post = ({ text, className, upload, post }) => {
   return (
     <div className={className}>
       <div className={`${style.postHeader} ${style.flexContainer}`}>
-        <img src={pic} alt="user id" />
+        <img src={feedsDp} alt="user id" />
         <div className={style.postTitle}>
-          <h4>{title}</h4>
-          <h5>{name}</h5>
+          <h4>Safe space</h4>
+          <h5>Young boi</h5>
         </div>
-        <p>1d</p>
+        <p className={style.timeStamp}>1d</p>
       </div>
       <div className={style.postContent}>
         <p>{text}</p>
-        {upload && <img src={upload} alt="uploaded" />}{" "}
+        {upload && <img src={upload} alt="uploaded" />}
       </div>
       <div className={`${style.PostAnalytics} ${style.flexContainer}`}>
         <button>

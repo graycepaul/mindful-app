@@ -30,21 +30,25 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 850px) {
-    .mobile h1 {
-        margin: 20px 190px 20px 0;
-        
+@media only screen and (max-width: 890px) {
+    .mobile {
+        padding: 30px 0;
     }
   }
 
   /* MOBILE PHONES */
   @media only screen and (max-width: 450px) {
     .mobile {
-        margin: 0 0 30px -10px;
+        width: 95vw;
+        margin: 0;
+        padding: 0;
     }
     .mobile img {
-        width: 300px;
-        margin: -50px 0 30px -40px;
+        width: 100%;
+    }
+    .mobile h1 {
+        width: 70%;
+        margin-left: 55px;
     }
 
   }

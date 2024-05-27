@@ -97,14 +97,14 @@
 
     .featuresCards {
         width: 320px;
-        margin: 0 0 0 -20px;
+        margin-left: -30px;
     }
     .card {
         margin: 30px auto 0 auto;
     }
     .offers {
         width: 370px;
-        margin-left: -50px;
+        margin-left: -55px;
     }
     .offersList p {
         line-height: 25px;
