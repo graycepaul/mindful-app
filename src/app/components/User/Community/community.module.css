@@ -306,6 +306,29 @@
     margin: 10px;
 }
 
+/* Smaller PC */
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    .communities {
+        margin: 0;
+        gap: 5px;
+    }
+    .communityTopics {
+        width: 230px;
+    }
+    .UserFeeds {
+        width: 490px;
+    }
+    .forYou {
+        width: 390px;
+    }
+    .followersCount {
+        margin-left: -150px;
+    }
+    .postsHistory {
+        max-height: 835px;
+    }
+}
+
 
 /* Tablet and mobile phones */
 @media only screen and (max-width: 840px){
@@ -386,7 +409,6 @@
         display: block;
     }
 }
-
 
     /* Mobile phones */
 @media only screen and (max-width: 450px){
