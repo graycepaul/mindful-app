@@ -10,7 +10,12 @@ import { AuthProvider } from "./Authentication/context/AuthContext";
 import "react-toastify/dist/ReactToastify.css";
 import { Community } from "./User/Community/Community";
 import { HealthTip } from "./User/HealthTips/HealthTips";
-import { hausaMessages, englishMessages } from "./messages";
+import {
+  hausaMessages,
+  englishMessages,
+  igboMessages,
+  yorubaMessages,
+} from "./messages";
 
 const ThemeContext = createContext();
 
@@ -22,9 +27,8 @@ function App() {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
 
-  const toggleLocale = () => {
-    const newLocale = locale === "ha" ? "en" : "ha";
-    setLocale(newLocale);
+  const handleLocaleChange = (event) => {
+    setLocale(event.target.value);
   };
 
   return (
@@ -32,7 +36,15 @@ function App() {
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <AuthProvider>
           <IntlProvider
-            messages={locale === "ha" ? hausaMessages : englishMessages}
+            messages={
+              locale === "ha"
+                ? hausaMessages
+                : locale === "ig"
+                ? igboMessages
+                : locale === "yo"
+                ? yorubaMessages
+                : englishMessages
+            }
             locale={locale}
             defaultLocale="en"
           >
@@ -45,7 +57,7 @@ function App() {
                     <Homepage
                       toggleTheme={toggleTheme}
                       theme={theme}
-                      toggleLocale={toggleLocale}
+                      handleLocaleChange={handleLocaleChange}
                       locale={locale}
                     />
                   }

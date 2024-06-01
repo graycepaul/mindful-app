@@ -1,5 +1,3 @@
-import { Articles } from "./Home/Articles/Articles";
-
 // header
 export const hausaMessages = {
   aboutUs: "Game da mu",
@@ -169,7 +167,7 @@ export const englishMessages = {
   bedtimeRoutineText:
     "This involves choosing activities that promote relaxation, consistency in performing these activities each night, creating a relaxing sleep environment, and incorporating relaxation techniques to prepare the body and mind for sleep.",
 
-  //LOCATION ENGLISSH
+  //LOCATION ENGLISH
   signupIn60Secs: "Sign Up in 60 Secs",
   easy: "Easy! Peasy!",
 
@@ -186,4 +184,183 @@ export const englishMessages = {
   googlePlay: "Google Play",
   terms: "Terms of Service",
   privacy: "Privacy Policy",
+};
+
+export const igboMessages = {
+  aboutUs: "Banyere Anyị",
+  ourServices: "Ọrụ Anyị",
+  contactUs: "Kpọtụrụ Anyị",
+  login: "Banye",
+  signUp: "Debanye",
+
+  //LANDING PAGE IGBO
+  landingPageTestimonial1:
+    "Ngwa Mindful bụ ìhè m na-eduzi na mgbake. Echiche kwa ụbọchị na-eme ka m doo anya",
+  landingPageTestimonial2:
+    "Ngwa Mindful gbanwere egwuregwu m na ọgụ megide ọrịa.",
+  landingPageTestimonial3:
+    "Ekele maka obodo na ike ọ na-ewetara m na njem mgbake m.",
+  landingPageTitle: "Na-agbanwe Mental ",
+  landingPageTitleSpan: " Wellness",
+  landingPageDescription:
+    "Na-azụlite Obodo Na-akwado maka Mgbake na-adịgide adịgide",
+  landingPageCTA: "Malite n'efu",
+  landingPageWhyMindful: "Gịnị Mere Mindful?",
+  landingPageMissionDescription:
+    "Mindful bụ mbido ọhụrụ nke na-elekwasị anya n'ịtọghe ọrịa ọgwụ na nsogbu ahụike na mpaghara North-West nke Naịjirịa, karịsịa State Katsina.",
+
+  //FEATURES IGBO
+  keyBenefits: "Uru Di Mkpa",
+  virtualTherapyTitle: "Oge Nlekọta Na-ekwurịta Ekwe",
+  SupportTitle: "Nkwado 24/7",
+  PersonalizedResourcesTitle: "Akụrụngwa a Kwalite Onye Ọzọ",
+  virtualTherapy:
+    "Nweta ndị ọkachamara na-ekwurịta ekwe site na oku vidio ma ọ bụ nzukọ maka nkwado a kwadoro onwe gị, mgbe ọ bụla, ebe ọ bụla.",
+  Support:
+    "Nweta enyemaka, nduzi, na obi ebere mgbe ọ bụla ịchọrọ, na-echekwa na ị naghị anọ naanị gị na njem gị.",
+  PersonalizedResources:
+    "Nweta ntụziaka a họọrọ, gụnyere meditashọn nduzi, usoro ịnagide, na ihe ọmụmụ ọmụmụ, dabere na mkpa gị pụrụ iche na mmasị gị.",
+
+  Goalsbtn: "Ebumnuche",
+  Communitybtn: "Obodo",
+  Journalbtn: "Akwụkwọ",
+  Therapybtn: "Nlekọta",
+  HelpLinebtn: "Ego Enyemaka",
+
+  OffersImg: "Debe ebumnuche ọ bụla, izuụka ma ọ bụ ọnwa ma soro mmepe gị",
+  Community: "Jikọọ na ndị ikom ibe gị, kesaa ahụmịhe, ma nyere nkwado.",
+  Journal: "Detuo echiche na mmetụta maka nlele onwe",
+  Therapy: "Nweta oge nlekọta na-ekwurịta ekwe na ndị ọkachamara dere akwụkwọ",
+  HelpLine: "Nweta nkwado ozugbo site na ndị na-ahụ maka nrụgide",
+  offersHeader: "Ihe Mindful na-enye",
+  offersDescription: "Ebe Mmụta na-agbanweghachi na akụkọ ịga nke ọma",
+
+  //ARTICLES IGBO
+  articlesHeader: "Ndụmọdụ Ọrụ Mma Maka Gị",
+  mindfulTips: "Ndụmọdụ Mindful",
+  exerciseBenefitsTitle: "Uru nke mgbatị kwa ụbọchị maka mgbake ọgwụ ọjọọ.",
+  exerciseBenefitsText:
+    "Mgbatị kwa ụbọchị na-enye ọtụtụ uru maka ndị nọ na mgbake ọgwụ ọjọọ, gụnyere mmelite na ahụike anụ ahụ, nkwalite ọnọdụ, ọrụ ọgụgụ isi, igbochi ịlaghachi, na nkwado mmekọrịta.",
+  articleTimeStamp: "Ọkt 19, 2021",
+  readMore: "Gụọkwuo ",
+  copingMechanismsTitle: "Mepụta usoro ịnagide nrụgide nke ọma",
+  copingMechanismsText:
+    "Site n'ịghọta nrụgide, ịchọpụta ihe na-akpata, ịzụlite usoro ịnagide nrụgide nke ọma, ịrụsi ọrụ ike, na ịchọ nkwado ọkachamara mgbe ọ dị mkpa, ndị mmadụ nwere ike ịnagide ihe ịma aka nke ọma ma nwee nghọta na njem mgbake ha.",
+  foodsTitle: "Nri na-akwado ahụike anụ ahụ na nke uche",
+  foodsText:
+    "Ịṅụ nri jupụtara na anụcha ọka, mkpụrụ osisi, akwụkwọ nri, abụba ahụike, anụ ahụ na-enweghị abụba, na nri probiotic na-enye nri dị mkpa na-akwado ahụike anụ ahụ na nke uche.",
+  emotionsTitle: "Ịchọpụta na ijikwa mmetụta na-enweghị ịlaghachi na ọgwụ ọjọọ",
+  emotionsText:
+    "Site na ịzụlite nghọta banyere mmetụta mmetụta uche, nyocha ihe kpatara ya, na ịzụlite usoro ịnagide nrụgide nke ọma, ndị mmadụ nwere ike ijikwa mmetụta ha nke ọma, belata ihe egwu nke ịlaghachi, ma melite ọdịmma ha n'ozuzu.",
+  bedtimeRoutineTitle: "Mepụta usoro izu ike n'isi ụra",
+  bedtimeRoutineText:
+    "Nke a na-agụnye ịhọrọ omume na-akwalite izu ike, ịdị na-arụ ọrụ n'ọrụ ndị a kwa abalị, ịmepụta ebe izu ike maka ụra, na itinye usoro izu ike iji kwadebe ahụ na uche maka ụra.",
+
+  //LOCATION IGBO
+  signupIn60Secs: "Debanye aha na nkeji iri isii",
+  easy: "Ọ dị mfe! Naanị Peasy!",
+
+  //FOOTER IGBO
+  about: "Banyere",
+  blog: "Blog",
+  community: "Obodo",
+  careers: "Ọrụ",
+  hiring: "Anyị na-achọ ịrụ ọrụ!",
+  contactUs: "Kpọtụrụ Anyị",
+  press: "Press",
+  downloadApp: "Budata ngwa",
+  appStore: "Ụlọ Ahịa Ngwa",
+  googlePlay: "Google Play",
+  terms: "Okwu Ọrụ",
+  privacy: "Nzuzo Ọrụ",
+};
+
+export const yorubaMessages = {
+  aboutUs: "Nipa Wa",
+  ourServices: "Awọn Iṣẹ Wa",
+  contactUs: "Kan si Wa",
+  login: "Wo ile",
+  signUp: "Forukọsilẹ",
+
+  //LANDING PAGE YORUBA
+  landingPageTestimonial1:
+    "Ẹ̀rọ Mindful jẹ́ ìmọ̀lára mi nígbà ìgbàpadà. Ìkọ́ láàrin ojoojúmọ́ tí jẹ́ kí nà fi ojú mi sí ojú",
+  landingPageTestimonial2: "Ẹ̀rọ Mindful yíyí ìjà mi padà nígbà àkóràn.",
+  landingPageTestimonial3:
+    "Ìdúpẹ́ fún àwùjọ àti agbára tí ó mú wá sí ìrìnàjò ìgbàpadà mi.",
+  landingPageTitle: "Ìdàsílẹ̀ Ìlera Ẹ̀mí ",
+  landingPageTitleSpan: " Aláàánú",
+  landingPageDescription: "Ṣíṣe Àwùjọ Ìdúpẹ́ Pẹlu Àtìlẹ́yìn fún Ìgbàpadà Aláàánú",
+  landingPageCTA: "Bẹ̀rẹ̀ fún ọfẹ́",
+  landingPageWhyMindful: "Èéṣe Mindful?",
+  landingPageMissionDescription:
+    "Mindful jẹ́ ìgbésẹ̀ tuntun tí ó dojúkọ àwọn ìṣòro ọlọ́jẹ àti ìṣòro ìlera ní apá ìwọ̀-òrùn-áríwá ilẹ̀ Nàìjíríà, pátápátá ní Ìpínlẹ̀ Katsina.",
+
+  //FEATURES YORUBA
+  keyBenefits: "Àǹfààní Kókó",
+  virtualTherapyTitle: "Ìpàdé Itọju Fífi ayélujára sísẹ́",
+  SupportTitle: "Ìtìlẹ́yìn 24/7",
+  PersonalizedResourcesTitle: "Àwọn Ohun Amáyésọra",
+  virtualTherapy:
+    "Gba ààyè sí àwọn oníṣègùn tí wọ́n fọwọ́sowọ́pò nípasẹ̀ ìpàdé fídiò tàbí ìbánisọ̀rọ̀ fún ìtìlẹ́yìn amáyésọra, nígbàkigbà, níbi kankan.",
+  Support:
+    "Gba ìrànwọ́, ìtòsọ́nà, àti ìfẹ̀ míràn nígbàkigbà, pẹ̀lú ìtìlẹ́yìn pé o kò sí nìkan ní ìrìnàjò rẹ.",
+  PersonalizedResources:
+    "Gba àwọn ìlànà amáyésọra, títí méjìpèjì, pẹ̀lú àwọn àdúrà ìtòsọ́nà, àwọn ọ̀nà ìṣòro, àti àwọn ohun èlò ẹ̀kọ́, gẹ́gẹ́ bí àwọn aini àti fẹ́rẹ́ rẹ.",
+
+  Goalsbtn: "Àwọn Èrò",
+  Communitybtn: "Àwùjọ",
+  Journalbtn: "Ìwé Ìkọ̀wé",
+  Therapybtn: "Ìtọ́jú",
+  HelpLinebtn: "Láìníìranwọ́",
+
+  OffersImg:
+    "Ṣètò àwọn èrò ojoojúmọ́, ọ̀sẹ̀ tàbí oṣù tí ó le ṣe, àti tọpinpin ìgbèsẹ rẹ",
+  Community: "Ṣepọ̀ pẹ̀lú àwọn alábàárin, pín irírí, àti pèsè ìtìlẹ́yìn.",
+  Journal: "Kọ àwọn èrò àti ìmọ̀lára fún ìwòye ara ẹni",
+  Therapy:
+    "Gba ààyè sí àwọn ìpàdé itọju fífi ayélujára sísẹ́ pẹ̀lú àwọn amòye tí wọ́n fọwọ́sowọ́pò",
+  HelpLine: "Gba ìtìlẹ́yìn lẹ́sẹ̀kẹsẹ̀ láti àwọn olùkànní ìjà",
+  offersHeader: "Ohun tí Mindful nṣe",
+  offersDescription: "Níbiti Ẹ̀kọ́ yípadà sí àwọn ìtàn àṣeyọrí",
+
+  //ARTICLES YORUBA
+  articlesHeader: "Àwọn Ìlànà Aláàánú fún Ìwọ",
+  mindfulTips: "Àwọn Ìmọ̀ràn Mindful",
+  exerciseBenefitsTitle: "Àǹfààní ìwòsàn ojoojúmọ́ fún ìgbàpadà ọlọ́jẹ.",
+  exerciseBenefitsText:
+    "Ìwòsàn ojoojúmọ́ ní ó ní àǹfààní púpọ̀ fún àwọn ènìyàn nínú ìgbàpadà ọlọ́jẹ, pẹ̀lú ìlérí ìlera ara, ìgbésoke inú rere, iṣẹ́ ọpọlọ, ìdínkù ìpadàbẹ̀, àti ìtìlẹ́yìn awùjọ.",
+  articleTimeStamp: "Ọ̀kàn 19, 2021",
+  readMore: "Ka Sí i ",
+  copingMechanismsTitle:
+    "Ìgbékalẹ̀ àwọn ọ̀nà ìṣòro ìlera láti ṣe àṣeyọrí àwọn ìdààmú",
+  copingMechanismsText:
+    "Nípa ṣíṣàyẹ̀wò àwọn ìdààmú, àṣìyànjú àwọn ohun tí ó fa, ìgbékalẹ̀ àwọn ọ̀nà ìṣòro ìlera, fífúnrarẹ̀ ní ìfọkànsí, àti ṣíṣàwárí ìtìlẹ́yìn ọ̀nà ọ̀nà nígbà tí ó bá yẹ, àwọn ènìyàn lè ṣàkóso àwọn ìṣòro náà pẹ̀lú agbára àti ìṣàkóso nínú ìrìnàjò ìgbàpadà wọn.",
+  foodsTitle: "Àwọn onjẹ tí ó ṣe àgbàára ìlera ara àti ọpọlọ",
+  foodsText:
+    "Ìjẹ àwọ́n onjẹ tí ó kún fún àwọn ewébẹ̀, àwọn èso, àwọn ẹfọ́, àwọn amúra ilera, àwọn onjẹ amúra aláyé, àti àwọn onjẹ tí ó kún fún àwọn ohun amúyàra ṣe ìpèsè àwọn nkan amáyé sòrọ̀ tí ó ṣe ìlera ara àti ọpọlọ.",
+  emotionsTitle: "Ìmòye àti iṣakoso àwọn ìmọ̀lára láì padà sí àwọn nkan",
+  emotionsText:
+    "Nípa ṣíṣàyẹ̀wò àwọn ìrírí ìmọ̀lára, ṣíṣàyẹ̀wò àwọn ohun tí ó fa, àti ìgbékalẹ̀ àwọn ọ̀nà ìṣòro ìlera, àwọn ènìyàn lè ṣàkóso àwọn ìmọ̀lára wọn pẹ̀lú agbára, dín ìrárẹ̀kútọ̀ ní ìṣẹ́, àti ilérí ìlera wọn pátápátá.",
+  bedtimeRoutineTitle: "Ìgbékalẹ̀ ètò ìsinmi àkókò ìsun",
+  bedtimeRoutineText:
+    "Èyí nínú àwọn iṣẹ́ tí ó mu àyíká sínmi wá, ìjọ̀wọ́pọ̀ nínú àwọn iṣẹ́ wọ̀nyí nínú gbogbo òru, ìgbékalẹ̀ àyíká sínmi fún ìsun, àti fífún ara àti ọpọlọ nínú àwọn ẹ̀kọ́ sínmi láti ṣàkóso ara àti ọpọlọ fún ìsun.",
+
+  //LOCATION YORUBA
+  signupIn60Secs: "Forukọsilẹ ní ìsẹjú mẹ́rìndínláàdọ́ta",
+  easy: "Rọrùn! Peasy!",
+
+  //FOOTER YORUBA
+  about: "Nipa",
+  blog: "Búlọọ̀gù",
+  community: "Àwùjọ",
+  careers: "Àwọn Ọ̀nà",
+  hiring: "A n waṣẹ!",
+  contactUs: "Kan si Wa",
+  press: "Tẹ̀",
+  downloadApp: "Ṣe igbasilẹ app",
+  appStore: "Ibi Itaja",
+  googlePlay: "Google Play",
+  terms: "Àwọn Ọ̀rọ̀ iṣẹ́",
+  privacy: "Ètò Àṣírí",
 };

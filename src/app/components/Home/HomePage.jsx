@@ -5,25 +5,25 @@ import { Header } from "./Header/Header";
 import { Articles } from "./Articles/Articles";
 import { Location } from "./Location/Map";
 
-export function Homepage({ toggleTheme, theme, toggleLocale, locale }) {
+export function Homepage({ toggleTheme, theme, handleLocaleChange, locale }) {
   return (
     <div>
       <header>
         <Header
           toggleTheme={toggleTheme}
           theme={theme}
-          toggleLocale={toggleLocale}
+          handleLocaleChange={handleLocaleChange}
           locale={locale}
         />
       </header>
       <main>
         <LandingPage />
-        <Features toggleLocale={toggleLocale} locale={locale} />
-        <Articles toggleLocale={toggleLocale} locale={locale} />
-        <Location toggleLocale={toggleLocale} locale={locale} />
+        <Features handleLocaleChange={handleLocaleChange} locale={locale} />
+        <Articles handleLocaleChange={handleLocaleChange} locale={locale} />
+        <Location handleLocaleChange={handleLocaleChange} locale={locale} />
       </main>
       <footer>
-        <Footer toggleLocale={toggleLocale} locale={locale} />
+        <Footer handleLocaleChange={handleLocaleChange} locale={locale} />
       </footer>
     </div>
   );
