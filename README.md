@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Mindful — Mental Wellness Web App (Capstone Project)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend-focused mental wellness web application built as a **capstone project** for the **Tech4Dev Women Techsters Fellowship**.
 
-## Available Scripts
+🌐 **Live App:** https://mindful-app.vercel.app/
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Mindful is a web application designed to promote mental wellness through a calm, accessible, and inclusive user experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application focuses primarily on **frontend functionality**, with **Firebase Authentication** used for user sign-in. It supports **multiple Nigerian languages** and includes **light and dark theme** switching to improve accessibility and comfort.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What This Project Demonstrates
 
-### `npm run build`
+- Frontend-focused application development
+- User authentication using Firebase
+- Multi-language (i18n) support
+- Light and dark theme implementation
+- Component-based architecture in a real project
+- Building for accessibility and inclusivity
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🔐 User authentication with Firebase
+- 🌍 Multi-language support:
+  - English
+  - Hausa
+  - Igbo
+  - Yoruba
+- 🌗 Light and dark theme toggle
+- 📱 Responsive design across devices
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React.js**
+- **JavaScript**
+- **CSS**
+- **Firebase Authentication**
+- **Vercel** (deployment)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+> Screenshots are stored in `/public/screenshots/`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Home](./public/screenshots/home.png)
+![Blog](./public/screenshots/blog.png)
+![Dark Mode](./public/screenshots/dark-mode.png)
+![Language Selection](./public/screenshots/language.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Local Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run this project locally:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/graycepaul/mindful-app.git
+cd mindful-app
+npm install
+npm run start
+```
